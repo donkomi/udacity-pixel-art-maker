@@ -1,6 +1,6 @@
 
 // Select size input
-var height, width, paint;
+let height, width, paint;
 // When size is submitted by the user, call makeGrid()
 $("#sizePicker").submit(function (event) {
     event.preventDefault();
