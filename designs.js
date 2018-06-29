@@ -14,9 +14,9 @@ $("#sizePicker").submit(function (event) {
 function makeGrid(height, width) {
 
     $("tr").remove();
-for (var i = 1; i <= height; i++) {
+for (let i = 1; i <= height; i++) {
        $("#pixelCanvas").append("<tr></tr>");
-           for (var j = 0; j < width; j++) {
+           for (let j = 0; j < width; j++) {
              $('tr:last-child').append('<td></td>');
              $('td').attr("class", 'color');
            }
@@ -25,7 +25,7 @@ for (var i = 1; i <= height; i++) {
 
     
 $('td').click(function (event){
-    var paint = $('#colorPicker').val();
+    let paint = $('#colorPicker').val();
     if($(this).attr('style')){
       $(this).removeAttr('style');
     }
