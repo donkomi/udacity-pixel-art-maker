@@ -1,4 +1,5 @@
 
+
 <html>
 <head>
     <title>Pixel Art Maker!</title>
@@ -6,24 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div id = "container">
+<div id ="entire">
     <h1>Lab: Pixel Art Maker</h1>
-
-    <h2>Choose Grid Size</h2>
+	 <p><h2>Design Canvas</h2></P>
+	<div id ="sideleft">
+	  <h2>&nbsp;&nbsp;Choose Grid Size</h2>
     <form id="sizePicker">
-        Grid Height:
+        <p>Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" max ="100" value="1">
-        Grid Width:
+		</p>
+       <p> Grid Width:&nbsp;&nbsp;
         <input type="number" id="inputWidth" name="width" min="1" max="100" value="1">
-        <input type="submit">
+		</P>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		<input type="submit"></P>
     </form>
+	 <h2>&nbsp;&nbsp;&nbsp;&nbsp;Pick A Color</h2>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<input type="color" id="colorPicker"></P>
+</div>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
 
-    <h2>Design Canvas</h2>
+    <div id="sideright" >
+	
     <table id="pixelCanvas"></table>
+	</div>
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="designs.js"></script>
+
+</div>
+<div class="footer">
+            <p>&copy; kayee. 2018</p>
+        </div>
+		</div>
 </body>
 </html>
